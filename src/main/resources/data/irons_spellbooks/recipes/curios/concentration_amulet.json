@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "minecraft:chain"
+    },
+    "X": {
+      "item": "irons_spellbooks:arcane_salvage"
+    }
+  },
+  "pattern": [
+    "SS ",
+    "SXX",
+    " XX"
+  ],
+  "result": {
+    "count": 1,
+    "item": "irons_spellbooks:concentration_amulet"
+  }
+}

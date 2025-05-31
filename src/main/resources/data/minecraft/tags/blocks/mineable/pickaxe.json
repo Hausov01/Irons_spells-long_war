@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "irons_spellbooks:scroll_forge",
+    "irons_spellbooks:arcane_anvil",
+    "irons_spellbooks:pedestal",
+    "irons_spellbooks:blood_cauldron",
+    "irons_spellbooks:arcane_debris",
+    "irons_spellbooks:armor_pile",
+    "irons_spellbooks:alchemist_cauldron"
+  ]
+}
