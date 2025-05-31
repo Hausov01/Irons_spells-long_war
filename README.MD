@@ -1,46 +1,29 @@
-![Minecraft: 1.19.2](https://img.shields.io/static/v1?label=&message=1.19.2&color=2d2d2d&labelColor=4e4e4e&style=flat-square&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMjCGJ1kDAAACoElEQVQ4T22SeU8aURTF/ULGtNRWWVQY9lXABWldIDPIMgVbNgEVtaa0damiqGBdipXaJcY2ofEf4ycbTt97pVAabzK5b27u+Z377kwXgK77QthRy7OfXbeJM+ttqKSXN8sdwbT/A0L7elmsYqrPHZmROLPh5YkV4oEBwaKuHj+yyJptLDoAhbq3O1V1XCVObY3FL24mfn5oRPrcwSCRfQOyNWcjVjZdCbtcdwcgXrXUspdOKbDN/XE9tiBJMhXHT60gUIT2dMhcDLMc3NVKQklz0QIkf5qlyEcO6Qs7yPhMJB4amDMFimQSmqNlE8SKAZFzDfxHfVILIIZ10sJ3OwIbcqSuiOjchkzNCboHev9o2YhgiUP8mxnLN24I6/3ghYdtQG5iUMpFBuCP9iKwLsfiLyeCp2rMnZgwX3NArGoxW1Ridl+BzLEVKa8KSxOqNmDdz0kFnxaLHhWEgAyZigWhHXL+pEDy2ozsDxv8vAzTnh7w5kcghqCaFmCT10of4iPIT2mRdPUh4HoCcVwBH/8Ac2kzUkEV5r3EfVSOvbAJa5NDyI0r2oDtWb1EClh+OoC3Pg7v/Bw7p939yI4rsRW2Y3lKh01eh7WpIRyKZqzyjjYgPdIvlaMWRqYuG7wWryYHsRM0sFolZiPvQ3jheIwSmSBPdkByG/B6Wi3RYiVmRX7GiAPiUCRisii8D+jZNKvPBrHCW1GY0bAz6WkDCtOaSyKQFsi4K5NqNiZtehN2Y5uAShETqolhBqJXpfdPuPsuWwAaRdHSkxdc11mPqkGnyY4pyKbpl1GyJ0Pel7yqBoFcF3zqno5f+d8ohYy9Sx7lzQpxo1eirluCDgt++00p6uxttrG4F/A39sJGZWZMfrcp6O6+5kaVzXJHAOj6DeSs8qw5o8oxAAAAAElFTkSuQmCC)
-[<img alt="Mod Loader: Forge" src="https://img.shields.io/badge/loader-forge-1976d2?style=flat-square"/>](https://files.minecraftforge.net/)
-[<img alt="Curse Forge" src="https://cf.way2muchnoise.eu/855414.svg?badge_style=flat"/>](https://www.curseforge.com/minecraft/mc-mods/irons-spells-n-spellbooks)
+# Iron's Spells 'n Spellbooks (Long war)
 
-<a href="https://discord.gg/TRzEdrndM2"><img src="https://img.shields.io/discord/1104430139275743293.svg?label=&amp;logo=discord&amp;logoColor=ffffff&amp;color=7389D8&amp;labelColor=6A7EC2&amp;style=for-the-badge" alt="" width="129" height="28" /></a>
-<!---
-![GitHub](https://img.shields.io/github/license/endorh/aerobatic-elytra?style=flat-square)
-[<img alt="Curse Forge" src="https://cf.way2muchnoise.eu/short_670730_downloads(4E4E4E-E04E14-E0E0E0-2D2D2D-E0E0E0).svg?badge_style=flat"/>](https://www.curseforge.com/minecraft/mc-mods/irons-spells-n-spellbooks)
-[<img alt="Join the Discord" src="https://img.shields.io/discord/1017484317636710520?color=%235865F2&label=&labelColor=4e4e4e&logo=discord&logoColor=white&style=flat-square"/>](https://discord.gg/gqYVjBq65U)
---->
-# Iron's Spells 'n Spellbooks
+### English
 
-[Curseforge Page](https://www.curseforge.com/minecraft/mc-mods/irons-spells-n-spellbooks)
+This repository is just a refinement of my much-loved mod.
+I am not a professional developer, but only an amateur, and I have slightly adjusted the mod code so that I can stretch the progression through it (about 20 times)  and to advance the player further in terms of the power of the spells offered.
+Initially, this version was developed for playing with friends on a mod build, so the balance in this version can be very badly damaged, but I will try to make this repository playable.
 
-[Documentation Site](https://iron431.github.io/Irons-Spellbooks-Docs/)
+In fact, 10 spell levels have been turned into 200, and the difference between the levels is very, very small. Level 40+ is what you would get at level 10 in the original mod. Next comes over-progression aimed at equally smoothly strengthening the player while trying to maintain the original balance as much as possible, most likely it turned out badly)
 
-## General
+GitHub of the mod authors:
+https://github.com/iron431/irons-spells-n-spellbooks
 
-If you love the mod and would like to help support its ongoing development consider becoming a patron
 
-<a href="https://www.patreon.com/Iron431"><img src="https://shields.io/badge/-Patreon-f86754?style=for-the-badge&amp;logo=patreon&amp;logoColor=white" alt="" width="106" height="28" /></a>
-<a href="https://bmc.link/iron431"><img src="https://shields.io/badge/-Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&amp;logo=buymeacoffee&amp;logoColor=white" alt="" width="162" height="28" /></a>
+### Russia
 
-## License & Use
-We reserve all rights. The points below outline what you can, cannot and must do when dealing with the
-contents of this repository.
+Данный репозиторий лишь доработка горячо любимого мной мода.
+Я не профессиональный разработчик, а лишь любитель и немного подкорректировал код мода так что бы растянуть прогрессию по нему (примерно в 20 раз)  и продвинуть игрока дальше по мощности предлагаемых заклинаний.
+Изначально данная версия разрабатывалась для игры с друзьями на сборке модов так что баланс в данном варианте может быть очень сильно испорчен, но я постараюсь првести данный репозиторий в играбельный вид.
 
-### You CAN
-* Use this mod in a modpack.
-* Write your own code that uses this code as a dependency (such as addons or datapacks).
-* Submit Pull Requests to this repository.
-* Fork and modify the code as long as modifications are not distributed publicly.
+По сути 10 уровней заклинаний превращены в 200 и разница между уровнями очень и очень мала. 40 уровень +- то что вы бы получили на 10 уровне в оригинальном моде. Далее идёт сверхпрогрессия направленная на столь же плавное усиление игрока при этом стараясь насколько это возможно сохранять оригинальный баланс, скорее всего получилось плохо)
 
-### You CANNOT
-* Use or redistribute ANY assets of this mod, even for personal use.
+GitHub авторов мода:
+https://github.com/iron431/irons-spells-n-spellbooks
 
-### Disclaimer
-<sub> 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-</sub>
+<br><br><br><br>
+P.S.
+I really hope that I'm not violating anyone's copyrights here))
+Очень надеюсь что я не нарушаю тут ни чьи авторские права))
