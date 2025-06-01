@@ -12,7 +12,7 @@ GitHub of the mod authors:
 https://github.com/iron431/irons-spells-n-spellbooks
 
 
-### Russia
+### Русский
 
 Данный репозиторий лишь доработка горячо любимого мной мода.
 Я не профессиональный разработчик, а лишь любитель и немного подкорректировал код мода так что бы растянуть прогрессию по нему (примерно в 20 раз)  и продвинуть игрока дальше по мощности предлагаемых заклинаний.
@@ -25,5 +25,5 @@ https://github.com/iron431/irons-spells-n-spellbooks
 
 <br><br><br><br>
 P.S.
-I really hope that I'm not violating anyone's copyrights here))
+I really hope that I'm not violating anyone's copyrights here))<br>
 Очень надеюсь что я не нарушаю тут ни чьи авторские права))

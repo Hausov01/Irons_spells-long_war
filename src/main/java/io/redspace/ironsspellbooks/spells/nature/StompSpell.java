@@ -48,9 +48,9 @@ public class StompSpell extends AbstractSpell {
             .build();
 
     public StompSpell() {
-        this.manaCostPerLevel = 10;
+        this.manaCostPerLevel = 2.5;
         this.baseSpellPower = 8;
-        this.spellPowerPerLevel = 2;
+        this.spellPowerPerLevel = 0.5;
         this.castTime = 10;
         this.baseManaCost = 50;
     }
@@ -107,7 +107,7 @@ public class StompSpell extends AbstractSpell {
     }
 
     private int getRange(int spellLevel, LivingEntity caster) {
-        return (int) (4 + spellLevel * getEntityPowerMultiplier(caster));
+        return (int) (4 + spellLevel/20 * getEntityPowerMultiplier(caster));
     }
 
     @Override

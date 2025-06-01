@@ -37,9 +37,9 @@ public class BloodSlashSpell extends AbstractSpell {
     }
 
     public BloodSlashSpell() {
-        this.manaCostPerLevel = 5;
+        this.manaCostPerLevel = 1.25;
         this.baseSpellPower = 10;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 0;
         this.baseManaCost = 25;
     }

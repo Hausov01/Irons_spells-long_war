@@ -34,9 +34,9 @@ public class EvasionSpell extends AbstractSpell {
             .build();
 
     public EvasionSpell() {
-        this.manaCostPerLevel = 20;
+        this.manaCostPerLevel = 5;
         this.baseSpellPower = 0;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 0;
         this.baseManaCost = 40;
     }

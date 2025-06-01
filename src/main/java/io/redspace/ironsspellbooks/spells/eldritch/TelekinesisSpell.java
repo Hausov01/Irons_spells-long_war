@@ -48,14 +48,14 @@ public class TelekinesisSpell extends AbstractEldritchSpell {
     public TelekinesisSpell() {
         this.manaCostPerLevel = 0;
         this.baseSpellPower = 8;
-        this.spellPowerPerLevel = 4;
+        this.spellPowerPerLevel = 1;
         this.castTime = 140;
         this.baseManaCost = 25;
     }
 
     @Override
     public int getCastTime(int spellLevel) {
-        return castTime + 20 * (spellLevel - 1);
+        return castTime + 20 * (spellLevel/20 - 1);
     }
 
     @Override
@@ -155,7 +155,7 @@ public class TelekinesisSpell extends AbstractEldritchSpell {
     }
 
     private int getRange(int spellLevel, LivingEntity caster) {
-        return 12 + (spellLevel - 1) * 2;
+        return 12 + (spellLevel/20 - 1) * 2;
     }
 
     @Override

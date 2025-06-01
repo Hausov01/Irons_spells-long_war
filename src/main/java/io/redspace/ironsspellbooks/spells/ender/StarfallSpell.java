@@ -50,9 +50,9 @@ public class StarfallSpell extends AbstractSpell {
             .build();
 
     public StarfallSpell() {
-        this.manaCostPerLevel = 1;
+        this.manaCostPerLevel = 0.25;
         this.baseSpellPower = 8;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 160;
         this.baseManaCost = 5;
 

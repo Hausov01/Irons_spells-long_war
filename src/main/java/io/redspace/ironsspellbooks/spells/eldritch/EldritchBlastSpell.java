@@ -46,14 +46,14 @@ public class EldritchBlastSpell extends AbstractEldritchSpell {
         return List.of(
                 Component.translatable("ui.irons_spellbooks.damage", Utils.stringTruncation(getDamage(spellLevel, caster), 2)),
                 Component.translatable("ui.irons_spellbooks.blast_count", (int) (getRecastCount(spellLevel, caster))),
-                Component.translatable("ui.irons_spellbooks.distance", Utils.stringTruncation(getRange(spellLevel, caster), 1))
+                Component.translatable("ui.irons_spellbooks.distance", Utils.stringTruncation(getRange(spellLevel, caster, spellLevel), 1))
         );
     }
 
     public EldritchBlastSpell() {
-        this.manaCostPerLevel = 15;
+        this.manaCostPerLevel = 3.75;
         this.baseSpellPower = 15;
-        this.spellPowerPerLevel = 0;
+        this.spellPowerPerLevel = 0.5;
         this.castTime = 0;
         this.baseManaCost = 90;
     }
@@ -85,7 +85,7 @@ public class EldritchBlastSpell extends AbstractEldritchSpell {
 
     @Override
     public int getRecastCount(int spellLevel, @Nullable LivingEntity entity) {
-        return 2 + spellLevel;
+        return 2 + spellLevel/12;
     }
 
     @Override
@@ -94,7 +94,7 @@ public class EldritchBlastSpell extends AbstractEldritchSpell {
             playerMagicData.getPlayerRecasts().addRecast(new RecastInstance(getSpellId(), spellLevel, getRecastCount(spellLevel, entity), 80, castSource, null), playerMagicData);
         }
 
-        var hitResult = Utils.raycastForEntity(level, entity, getRange(spellLevel, entity), true, .15f);
+        var hitResult = Utils.raycastForEntity(level, entity, getRange(spellLevel, entity, spellLevel), true, .15f);
         level.addFreshEntity(new EldritchBlastVisualEntity(level, entity.getEyePosition().subtract(0, .75f, 0), hitResult.getLocation(), entity));
         if (hitResult.getType() == HitResult.Type.ENTITY) {
             Entity target = ((EntityHitResult) hitResult).getEntity();
@@ -106,12 +106,12 @@ public class EldritchBlastSpell extends AbstractEldritchSpell {
         super.onCast(level, spellLevel, entity, castSource, playerMagicData);
     }
 
-    public static float getRange(int level, LivingEntity caster) {
-        return 30;
+    public static float getRange(int level, LivingEntity caster, int spellLevel) {
+        return 30 + spellLevel/10;
     }
 
     private float getDamage(int spellLevel, LivingEntity caster) {
-        return getSpellPower(spellLevel, caster);
+        return getSpellPower(spellLevel/3, caster);
     }
 
     private int getFreezeTime(int spellLevel, LivingEntity caster) {

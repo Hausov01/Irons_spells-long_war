@@ -41,9 +41,9 @@ public class FangStrikeSpell extends AbstractSpell {
             .build();
 
     public FangStrikeSpell() {
-        this.manaCostPerLevel = 3;
+        this.manaCostPerLevel = 1.25;
         this.baseSpellPower = 6;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 15;
         this.baseManaCost = 30;
     }
@@ -105,7 +105,7 @@ public class FangStrikeSpell extends AbstractSpell {
     }
 
     private int getCount(int spellLevel, LivingEntity entity) {
-        return 7 + spellLevel;
+        return 7 + spellLevel/20;
     }
 
     private float getDamage(int spellLevel, LivingEntity entity) {

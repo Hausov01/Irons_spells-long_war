@@ -46,7 +46,7 @@ public class ArrowVolleySpell extends AbstractSpell {
             .build();
 
     public ArrowVolleySpell() {
-        this.manaCostPerLevel = 10;
+        this.manaCostPerLevel = 2.5;
         this.baseSpellPower = 8;
         this.spellPowerPerLevel = 0;
         this.castTime = 30;
@@ -121,15 +121,15 @@ public class ArrowVolleySpell extends AbstractSpell {
     }
 
     private int getRows(int spellLevel, LivingEntity entity) {
-        return 4 + spellLevel;
+        return 4 + spellLevel/5;
     }
 
     private int getArrowsPerRow(int spellLevel, LivingEntity entity) {
-        return 5 + spellLevel / 2;
+        return 5 + spellLevel /20;
     }
 
     private float getDamage(int spellLevel, LivingEntity entity) {
-        return this.getSpellPower(spellLevel, entity) * .25f;
+        return this.getSpellPower(spellLevel*10, entity) * .25f;
     }
 
     @Override

@@ -40,9 +40,9 @@ public class FirecrackerSpell extends AbstractSpell {
             .build();
 
     public FirecrackerSpell() {
-        this.manaCostPerLevel = 2;
+        this.manaCostPerLevel = 0.5;
         this.baseSpellPower = 4;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 0;
         this.baseManaCost = 20;
     }

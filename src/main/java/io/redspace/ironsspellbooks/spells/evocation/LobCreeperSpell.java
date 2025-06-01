@@ -38,9 +38,9 @@ public class LobCreeperSpell extends AbstractSpell {
             .build();
 
     public LobCreeperSpell() {
-        this.manaCostPerLevel = 2;
+        this.manaCostPerLevel = 0.5;
         this.baseSpellPower = 12;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 0;
         this.baseManaCost = 20;
     }
@@ -72,7 +72,7 @@ public class LobCreeperSpell extends AbstractSpell {
 
     @Override
     public void onCast(Level level, int spellLevel, LivingEntity entity, CastSource castSource, MagicData playerMagicData) {
-        float speed = (6 + spellLevel) * .1f;
+        float speed = (6 + spellLevel/20) * .1f;
         float damage = getDamage(spellLevel, entity);
         CreeperHeadProjectile head = new CreeperHeadProjectile(entity, level, speed, damage);
         Vec3 spawn = entity.getEyePosition().add(entity.getForward());

@@ -51,9 +51,9 @@ public class HeatSurgeSpell extends AbstractSpell {
             .build();
 
     public HeatSurgeSpell() {
-        this.manaCostPerLevel = 8;
+        this.manaCostPerLevel = 2;
         this.baseSpellPower = 10;
-        this.spellPowerPerLevel = 2;
+        this.spellPowerPerLevel = 0.5;
         this.castTime = 20;
         this.baseManaCost = 50;
     }
@@ -96,7 +96,7 @@ public class HeatSurgeSpell extends AbstractSpell {
     }
 
     public float getRadius(int spellLevel, LivingEntity caster) {
-        return 6 + spellLevel * .5f;
+        return 6 + spellLevel/20 * .5f;
     }
 
     public int getDuration(int spellLevel, LivingEntity caster) {
@@ -104,7 +104,7 @@ public class HeatSurgeSpell extends AbstractSpell {
     }
 
     public int getRendAmplifier(int spellLevel, LivingEntity caster) {
-        return 1 + (spellLevel);
+        return 1 + (spellLevel/20);
     }
 
     @Override

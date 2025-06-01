@@ -38,9 +38,9 @@ public class ShieldSpell extends AbstractSpell {
             .build();
 
     public ShieldSpell() {
-        this.manaCostPerLevel = 5;
+        this.manaCostPerLevel = 1.25;
         this.baseSpellPower = 5;
-        this.spellPowerPerLevel = 10;
+        this.spellPowerPerLevel = 2.5;
         this.baseManaCost = 35;
         this.castTime = 0;
     }
@@ -81,7 +81,7 @@ public class ShieldSpell extends AbstractSpell {
     }
 
     private float getShieldHP(int spellLevel, LivingEntity caster) {
-        return 10 + getSpellPower(spellLevel, caster);
+        return 10 + getSpellPower(spellLevel/20, caster);
     }
 
     //    @Override

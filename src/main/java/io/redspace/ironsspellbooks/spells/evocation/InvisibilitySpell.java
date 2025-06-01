@@ -36,9 +36,9 @@ public class InvisibilitySpell extends AbstractSpell {
             .build();
 
     public InvisibilitySpell() {
-        this.manaCostPerLevel = 8;
+        this.manaCostPerLevel = 2;
         this.baseSpellPower = 10;
-        this.spellPowerPerLevel = 5;
+        this.spellPowerPerLevel = 1.25;
         this.castTime = 40;
         this.baseManaCost = 35;
     }

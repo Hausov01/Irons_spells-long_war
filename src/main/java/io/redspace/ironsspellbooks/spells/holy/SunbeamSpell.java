@@ -41,9 +41,9 @@ public class SunbeamSpell extends AbstractSpell {
             .build();
 
     public SunbeamSpell() {
-        this.manaCostPerLevel = 10;
+        this.manaCostPerLevel = 2.5;
         this.baseSpellPower = 24;
-        this.spellPowerPerLevel = 3;
+        this.spellPowerPerLevel = 0.75;
         this.castTime = 0;
         this.baseManaCost = 40;
     }
@@ -101,6 +101,6 @@ public class SunbeamSpell extends AbstractSpell {
     }
 
     private int getDuration(int spellLevel, LivingEntity entity) {
-        return 100 + spellLevel * 40;
+        return 100 + spellLevel/20 * 40;
     }
 }

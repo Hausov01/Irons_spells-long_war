@@ -43,9 +43,9 @@ public class EchoingStrikesSpell extends AbstractSpell {
             .build();
 
     public EchoingStrikesSpell() {
-        this.manaCostPerLevel = 10;
+        this.manaCostPerLevel = 2.5;
         this.baseSpellPower = 20;
-        this.spellPowerPerLevel = 5;
+        this.spellPowerPerLevel = 1.25;
         this.castTime = 0;
         this.baseManaCost = 50;
     }
@@ -72,7 +72,7 @@ public class EchoingStrikesSpell extends AbstractSpell {
     }
 
     private float getPercentDamage(int spellLevel, LivingEntity entity) {
-        return EchoingStrikesEffect.getDamageModifier(getAmplifierForLevel(spellLevel, entity), entity) * 100;
+        return EchoingStrikesEffect.getDamageModifier(getAmplifierForLevel(spellLevel/20, entity), entity) * 100;
     }
 
     private int getAmplifierForLevel(int spellLevel, LivingEntity caster) {

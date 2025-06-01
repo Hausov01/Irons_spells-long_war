@@ -23,9 +23,9 @@ public class SummonEnderChestSpell extends AbstractSpell {
     private final ResourceLocation spellId = new ResourceLocation(IronsSpellbooks.MODID, "summon_ender_chest");
 
     public SummonEnderChestSpell() {
-        this.manaCostPerLevel = 1;
+        this.manaCostPerLevel = 0.25;
         this.baseSpellPower = 1;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 0;
         this.baseManaCost = 25;
     }

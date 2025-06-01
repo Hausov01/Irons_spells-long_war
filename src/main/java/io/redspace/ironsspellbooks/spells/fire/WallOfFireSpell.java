@@ -54,9 +54,9 @@ public class WallOfFireSpell extends AbstractSpell {
             .build();
 
     public WallOfFireSpell() {
-        this.manaCostPerLevel = 5;
+        this.manaCostPerLevel = 1.25;
         this.baseSpellPower = 4;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 0;
         this.baseManaCost = 30;
     }
@@ -132,7 +132,7 @@ public class WallOfFireSpell extends AbstractSpell {
     }
 
     private float getWallLength(int spellLevel, LivingEntity entity) {
-        return 10 + spellLevel * 3 * getEntityPowerMultiplier(entity);
+        return 10 + spellLevel/20 * 3 * getEntityPowerMultiplier(entity);
     }
 
     private float getDamage(int spellLevel, LivingEntity sourceEntity) {

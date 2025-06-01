@@ -42,7 +42,7 @@ public class AcidOrbSpell extends AbstractSpell {
             .build();
 
     public AcidOrbSpell() {
-        this.manaCostPerLevel = 3;
+        this.manaCostPerLevel = 0.75;
         this.baseSpellPower = 1;
         this.spellPowerPerLevel = 0;
         this.castTime = 15;
@@ -92,7 +92,7 @@ public class AcidOrbSpell extends AbstractSpell {
     }
 
     public int getRendAmplifier(int spellLevel, LivingEntity caster) {
-        return spellLevel + 2;
+        return spellLevel/20 + 2;
     }
 
     public int getRendDuration(int spellLevel, LivingEntity caster) {

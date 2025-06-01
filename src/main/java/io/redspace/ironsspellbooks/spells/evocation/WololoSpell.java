@@ -32,9 +32,9 @@ public class WololoSpell extends AbstractSpell {
             .build();
 
     public WololoSpell() {
-        this.manaCostPerLevel = 5;
+        this.manaCostPerLevel = 1.25;
         this.baseSpellPower = 4;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 30;
         this.baseManaCost = 10;
 
@@ -74,6 +74,6 @@ public class WololoSpell extends AbstractSpell {
                 MagicManager.spawnParticles(world, ParticleTypes.CRIT, sheep.getX(), sheep.getY() + .6, sheep.getZ(), 25, .5, .5, .5, 0, false);
             }
         }
-        super.onCast(world, spellLevel, entity, castSource, playerMagicData);
+        super.onCast(world, spellLevel/20, entity, castSource, playerMagicData);
     }
 }

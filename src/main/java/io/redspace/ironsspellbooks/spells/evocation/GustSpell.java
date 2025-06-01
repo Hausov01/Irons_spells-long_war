@@ -43,9 +43,9 @@ public class GustSpell extends AbstractSpell {
             .build();
 
     public GustSpell() {
-        this.manaCostPerLevel = 5;
+        this.manaCostPerLevel = 1.25;
         this.baseSpellPower = 10;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 15;
         this.baseManaCost = 30;
     }

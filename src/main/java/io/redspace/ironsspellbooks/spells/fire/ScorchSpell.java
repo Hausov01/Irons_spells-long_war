@@ -54,9 +54,9 @@ public class ScorchSpell extends AbstractSpell {
             .build();
 
     public ScorchSpell() {
-        this.manaCostPerLevel = 5;
+        this.manaCostPerLevel = 1.25;
         this.baseSpellPower = 8;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 20;
         this.baseManaCost = 50;
 
@@ -137,7 +137,7 @@ public class ScorchSpell extends AbstractSpell {
     }
 
     private float getDamage(int spellLevel, LivingEntity caster) {
-        return getSpellPower(spellLevel, caster);
+        return getSpellPower(spellLevel/2, caster);
     }
 
     private float getRadius(LivingEntity caster) {

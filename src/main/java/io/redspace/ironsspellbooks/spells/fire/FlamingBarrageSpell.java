@@ -42,9 +42,9 @@ public class FlamingBarrageSpell extends AbstractSpell {
     }
 
     public FlamingBarrageSpell() {
-        this.manaCostPerLevel = 5;
+        this.manaCostPerLevel = 1.25;
         this.baseSpellPower = 3;
-        this.spellPowerPerLevel = 2;
+        this.spellPowerPerLevel = 0.5;
         this.castTime = 0;
         this.baseManaCost = 80;
     }

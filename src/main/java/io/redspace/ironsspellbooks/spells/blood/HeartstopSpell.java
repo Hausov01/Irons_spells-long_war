@@ -35,9 +35,9 @@ public class HeartstopSpell extends AbstractSpell {
     }
 
     public HeartstopSpell() {
-        this.manaCostPerLevel = 10;
+        this.manaCostPerLevel = 2.5;
         this.baseSpellPower = 300;
-        this.spellPowerPerLevel = 30;
+        this.spellPowerPerLevel = 7.5;
         this.castTime = 0;
         this.baseManaCost = 50;
 

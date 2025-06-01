@@ -43,9 +43,9 @@ public class EarthquakeSpell extends AbstractSpell {
             .build();
 
     public EarthquakeSpell() {
-        this.manaCostPerLevel = 10;
+        this.manaCostPerLevel = 2.5;
         this.baseSpellPower = 8;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 40;
         this.baseManaCost = 50;
     }

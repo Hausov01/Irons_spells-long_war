@@ -41,9 +41,9 @@ public class FireBreathSpell extends AbstractSpell {
             .build();
 
     public FireBreathSpell() {
-        this.manaCostPerLevel = 1;
+        this.manaCostPerLevel = 0.25;
         this.baseSpellPower = 0;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 100;
         this.baseManaCost = 5;
     }

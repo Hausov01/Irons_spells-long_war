@@ -44,7 +44,7 @@ public class BlackHoleSpell extends AbstractSpell {
             .build();
 
     public BlackHoleSpell() {
-        this.manaCostPerLevel = 100;
+        this.manaCostPerLevel = 25;
         this.baseSpellPower = 1;
         this.spellPowerPerLevel = 0;
         this.castTime = 100;
@@ -104,7 +104,7 @@ public class BlackHoleSpell extends AbstractSpell {
     }
 
     private float getRadius(int spellLevel, LivingEntity entity) {
-        return (2 * spellLevel + 4) + (1 * .125f * getSpellPower(spellLevel, entity));
+        return (2 * spellLevel/20 + 4) + (1 * .125f * getSpellPower(spellLevel, entity));
     }
 
     @Override

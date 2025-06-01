@@ -39,9 +39,9 @@ public class BloodNeedlesSpell extends AbstractSpell {
     }
 
     public BloodNeedlesSpell() {
-        this.manaCostPerLevel = 5;
+        this.manaCostPerLevel = 1.25;
         this.baseSpellPower = 8;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 0;
         this.baseManaCost = 25;
     }
@@ -86,7 +86,7 @@ public class BloodNeedlesSpell extends AbstractSpell {
     }
 
     private int getCount(int spellLevel) {
-        return 5;
+        return 5+ spellLevel/40;
     }
 
     private float getDamage(int spellLevel, LivingEntity caster) {

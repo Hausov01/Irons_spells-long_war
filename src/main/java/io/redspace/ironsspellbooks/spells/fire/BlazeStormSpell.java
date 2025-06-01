@@ -41,16 +41,16 @@ public class BlazeStormSpell extends AbstractSpell {
             .build();
 
     public BlazeStormSpell() {
-        this.manaCostPerLevel = 1;
+        this.manaCostPerLevel = 0.25;
         this.baseSpellPower = 5;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 60 - 5;
         this.baseManaCost = 5;
     }
 
     @Override
     public int getCastTime(int spellLevel) {
-        return castTime + 5 * spellLevel;
+        return castTime + 5 * spellLevel/20;
     }
 
     @Override
@@ -80,7 +80,7 @@ public class BlazeStormSpell extends AbstractSpell {
 
     @Override
     public void onCast(Level world, int spellLevel, LivingEntity entity, CastSource castSource, MagicData playerMagicData) {
-        super.onCast(world, spellLevel, entity, castSource, playerMagicData);
+        super.onCast(world, spellLevel/20, entity, castSource, playerMagicData);
     }
 
     @Override

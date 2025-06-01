@@ -44,9 +44,9 @@ public class RootSpell extends AbstractSpell {
             .build();
 
     public RootSpell() {
-        this.manaCostPerLevel = 3;
+        this.manaCostPerLevel = 0.75;
         this.baseSpellPower = 5;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 40;
         this.baseManaCost = 45;
     }
@@ -134,7 +134,7 @@ public class RootSpell extends AbstractSpell {
     }
 
     public int getDuration(int spellLevel, LivingEntity caster) {
-        return (int) (getSpellPower(spellLevel, caster) * 20);
+        return (int) (getSpellPower(spellLevel/4, caster) * 20);
     }
 
 }

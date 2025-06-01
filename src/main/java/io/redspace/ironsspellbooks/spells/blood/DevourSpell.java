@@ -39,9 +39,9 @@ public class DevourSpell extends AbstractSpell {
     }
 
     public DevourSpell() {
-        this.manaCostPerLevel = 4;
+        this.manaCostPerLevel = 1;
         this.baseSpellPower = 6;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 0;
         this.baseManaCost = 25;
     }

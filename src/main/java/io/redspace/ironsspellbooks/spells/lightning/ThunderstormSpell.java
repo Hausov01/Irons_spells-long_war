@@ -75,7 +75,7 @@ public class ThunderstormSpell extends AbstractSpell {
     }
 
     private int getAmplifierForLevel(int spellLevel, LivingEntity caster) {
-        return 8 + (int) ((spellLevel - 1) * getEntityPowerMultiplier(caster));
+        return 8 + (int) ((spellLevel/20 - 1) * getEntityPowerMultiplier(caster));
     }
 
     public int getDurationTicks(int spellLevel, LivingEntity caster) {

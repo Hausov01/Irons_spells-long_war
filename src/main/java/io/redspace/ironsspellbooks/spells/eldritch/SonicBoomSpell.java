@@ -47,9 +47,9 @@ public class SonicBoomSpell extends AbstractEldritchSpell {
     }
 
     public SonicBoomSpell() {
-        this.manaCostPerLevel = 50;
+        this.manaCostPerLevel = 12.5;
         this.baseSpellPower = 20;
-        this.spellPowerPerLevel = 8;
+        this.spellPowerPerLevel = 2;
         this.castTime = 30;
         this.baseManaCost = 110;
     }
@@ -114,7 +114,7 @@ public class SonicBoomSpell extends AbstractEldritchSpell {
     }
 
     public static float getRange(int level, LivingEntity caster) {
-        return 15 + 5 * level;
+        return 15 + 5 * level/20;
     }
 
     private float getDamage(int spellLevel, LivingEntity caster) {

@@ -42,7 +42,7 @@ public class ChainCreeperSpell extends AbstractSpell {
             .build();
 
     public ChainCreeperSpell() {
-        this.manaCostPerLevel = 10;
+        this.manaCostPerLevel = 2.5;
         this.baseSpellPower = 5;
         this.spellPowerPerLevel = 0;
         this.castTime = 30;
@@ -120,10 +120,10 @@ public class ChainCreeperSpell extends AbstractSpell {
     }
 
     private int getCount(int spellLevel, LivingEntity entity) {
-        return 3 + spellLevel - 1;
+        return 3 + spellLevel/20 - 1;
     }
 
     private float getDamage(int spellLevel, LivingEntity entity) {
-        return this.getSpellPower(spellLevel, entity);
+        return this.getSpellPower(spellLevel*5, entity);
     }
 }

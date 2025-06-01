@@ -43,9 +43,9 @@ public class OakskinSpell extends AbstractSpell {
             .build();
 
     public OakskinSpell() {
-        this.manaCostPerLevel = 5;
+        this.manaCostPerLevel = 1.25;
         this.baseSpellPower = 20;
-        this.spellPowerPerLevel = 3;
+        this.spellPowerPerLevel = 0.75;
         this.castTime = 0;
         this.baseManaCost = 15;
     }
@@ -77,13 +77,13 @@ public class OakskinSpell extends AbstractSpell {
 
     @Override
     public void onCast(Level level, int spellLevel, LivingEntity entity, CastSource castSource, MagicData playerMagicData) {
-        entity.addEffect(new MobEffectInstance(MobEffectRegistry.OAKSKIN.get(), (int) (getSpellPower(spellLevel, entity) * 20), spellLevel - 1, false, false, true));
+        entity.addEffect(new MobEffectInstance(MobEffectRegistry.OAKSKIN.get(), (int) (getSpellPower(spellLevel/4, entity) * 20), spellLevel - 1, false, false, true));
         Messages.sendToPlayersTrackingEntity(new ClientboundOakskinParticles(entity.position()), entity, true);
         super.onCast(level, spellLevel, entity, castSource, playerMagicData);
     }
 
     private float getPercentDamage(int spellLevel, LivingEntity entity) {
-        return OakskinEffect.getReductionAmount(spellLevel) * 100;
+        return OakskinEffect.getReductionAmount(spellLevel/20) * 100;
     }
 
     @Override

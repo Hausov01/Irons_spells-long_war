@@ -49,9 +49,9 @@ public class FlamingStrikeSpell extends AbstractSpell {
             .build();
 
     public FlamingStrikeSpell() {
-        this.manaCostPerLevel = 15;
+        this.manaCostPerLevel = 3.75;
         this.baseSpellPower = 5;
-        this.spellPowerPerLevel = 2;
+        this.spellPowerPerLevel = 0.5;
         this.castTime = 10;
         this.baseManaCost = 30;
     }
@@ -89,7 +89,7 @@ public class FlamingStrikeSpell extends AbstractSpell {
     @Override
     public int getEffectiveCastTime(int spellLevel, @Nullable LivingEntity entity) {
         //due to animation timing, we do not want cast time attribute to affect this spell
-        return getCastTime(spellLevel);
+        return getCastTime(spellLevel/20);
     }
 
     @Override

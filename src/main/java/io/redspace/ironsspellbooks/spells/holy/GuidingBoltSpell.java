@@ -36,9 +36,9 @@ public class GuidingBoltSpell extends AbstractSpell {
             .build();
 
     public GuidingBoltSpell() {
-        this.manaCostPerLevel = 5;
+        this.manaCostPerLevel = 1.25;
         this.baseSpellPower = 6;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 0;
         this.baseManaCost = 20;
     }

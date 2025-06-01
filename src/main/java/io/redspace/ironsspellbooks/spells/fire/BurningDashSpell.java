@@ -43,9 +43,9 @@ public class BurningDashSpell extends AbstractSpell {
             .build();
 
     public BurningDashSpell() {
-        this.manaCostPerLevel = 2;
+        this.manaCostPerLevel = 0.5;
         this.baseSpellPower = 1;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 0;
         this.baseManaCost = 20;
     }

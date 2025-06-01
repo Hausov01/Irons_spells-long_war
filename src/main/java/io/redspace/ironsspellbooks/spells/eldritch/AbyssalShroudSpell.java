@@ -37,9 +37,9 @@ public class AbyssalShroudSpell extends AbstractEldritchSpell {
             .build();
 
     public AbyssalShroudSpell() {
-        this.manaCostPerLevel = 20;
+        this.manaCostPerLevel = 5;
         this.baseSpellPower = 6;
-        this.spellPowerPerLevel = 6;
+        this.spellPowerPerLevel = 1.5;
         this.castTime = 0;
         this.baseManaCost = 300;
     }

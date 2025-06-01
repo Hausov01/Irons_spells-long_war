@@ -45,9 +45,9 @@ public class HealingCircleSpell extends AbstractSpell {
             .build();
 
     public HealingCircleSpell() {
-        this.manaCostPerLevel = 10;
+        this.manaCostPerLevel = 2.5;
         this.baseSpellPower = 2;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 20;
         this.baseManaCost = 40;
     }

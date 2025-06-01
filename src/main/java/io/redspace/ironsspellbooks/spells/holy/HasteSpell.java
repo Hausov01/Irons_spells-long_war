@@ -49,9 +49,9 @@ public class HasteSpell extends AbstractSpell {
             .build();
 
     public HasteSpell() {
-        this.manaCostPerLevel = 10;
+        this.manaCostPerLevel = 2.5;
         this.baseSpellPower = 30;
-        this.spellPowerPerLevel = 5;
+        this.spellPowerPerLevel = 1.25;
         this.castTime = 30;
         this.baseManaCost = 50;
     }
@@ -115,6 +115,6 @@ public class HasteSpell extends AbstractSpell {
     }
 
     public int getDuration(int spellLevel, LivingEntity caster) {
-        return (int) (getSpellPower(spellLevel, caster) * 20);
+        return (int) (getSpellPower(spellLevel/20, caster) * 20);
     }
 }

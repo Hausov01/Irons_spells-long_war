@@ -48,9 +48,9 @@ public class RaiseDeadSpell extends AbstractSpell {
     }
 
     public RaiseDeadSpell() {
-        this.manaCostPerLevel = 10;
+        this.manaCostPerLevel = 2.5;
         this.baseSpellPower = 10;
-        this.spellPowerPerLevel = 3;
+        this.spellPowerPerLevel = 0.75;
         this.castTime = 30;
         this.baseManaCost = 50;
 
@@ -85,7 +85,7 @@ public class RaiseDeadSpell extends AbstractSpell {
     public void onCast(Level world, int spellLevel, LivingEntity entity, CastSource castSource, MagicData playerMagicData) {
         int summonTime = 20 * 60 * 10;
         float radius = 1.5f + .185f * spellLevel;
-        for (int i = 0; i < spellLevel; i++) {
+        for (int i = 0; i < spellLevel/10; i++) {
             boolean isSkeleton = Utils.random.nextDouble() < .3;
             var equipment = getEquipment(getSpellPower(spellLevel, entity), Utils.random);
 
@@ -126,7 +126,7 @@ public class RaiseDeadSpell extends AbstractSpell {
         Item[] iron = {Items.IRON_BOOTS, Items.IRON_LEGGINGS, Items.IRON_CHESTPLATE, Items.IRON_HELMET};
 
         int minQuality = 12;
-        int maxQuality = getMaxLevel() * (int) spellPowerPerLevel + 15;
+        int maxQuality = getMaxLevel()/20 * (int) spellPowerPerLevel + 15;
 
         ItemStack[] result = new ItemStack[4];
         for (int i = 0; i < 4; i++) {

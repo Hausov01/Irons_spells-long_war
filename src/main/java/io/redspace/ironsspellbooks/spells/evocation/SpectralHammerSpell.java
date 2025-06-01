@@ -49,9 +49,9 @@ public class SpectralHammerSpell extends AbstractSpell {
             .build();
 
     public SpectralHammerSpell() {
-        this.manaCostPerLevel = 5;
+        this.manaCostPerLevel = 1.25;
         this.baseSpellPower = 1;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 0;
         this.baseManaCost = 15;
     }
@@ -90,8 +90,8 @@ public class SpectralHammerSpell extends AbstractSpell {
         var blockPosition = Utils.getTargetBlock(world, entity, ClipContext.Fluid.NONE, distance);
         var face = blockPosition.getDirection();
 
-        int radius = getRadius(spellLevel, entity);
-        int depth = getDepth(spellLevel, entity);
+        int radius = getRadius(spellLevel, entity) /2;
+        int depth = getDepth(spellLevel, entity) /2;
 
         var spectralHammer = new SpectralHammer(world, entity, blockPosition, depth, radius);
         Vec3 position = Vec3.atCenterOf(blockPosition.getBlockPos());

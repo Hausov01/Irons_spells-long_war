@@ -48,9 +48,9 @@ public class SculkTentaclesSpell extends AbstractEldritchSpell {
             .build();
 
     public SculkTentaclesSpell() {
-        this.manaCostPerLevel = 50;
+        this.manaCostPerLevel = 12.5;
         this.baseSpellPower = 8;
-        this.spellPowerPerLevel = 3;
+        this.spellPowerPerLevel = 0.75;
         this.castTime = 20;
         this.baseManaCost = 150;
     }
@@ -88,7 +88,7 @@ public class SculkTentaclesSpell extends AbstractEldritchSpell {
 
     @Override
     public void onCast(Level level, int spellLevel, LivingEntity entity, CastSource castSource, MagicData playerMagicData) {
-        int rings = getRings(spellLevel, entity);
+        int rings = getRings(spellLevel/4, entity);
         int count = 2;
         Vec3 center = null;
         if (playerMagicData.getAdditionalCastData() instanceof TargetEntityCastData castTargetingData) {
@@ -123,10 +123,10 @@ public class SculkTentaclesSpell extends AbstractEldritchSpell {
     }
 
     private float getDamage(int spellLevel, LivingEntity entity) {
-        return getSpellPower(spellLevel, entity);
+        return getSpellPower(spellLevel/4, entity);
     }
 
     private int getRings(int spellLevel, LivingEntity entity) {
-        return 1 + spellLevel;
+        return 1 + spellLevel/10;
     }
 }

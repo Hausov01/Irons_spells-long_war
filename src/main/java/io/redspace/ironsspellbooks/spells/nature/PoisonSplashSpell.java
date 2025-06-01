@@ -43,9 +43,9 @@ public class PoisonSplashSpell extends AbstractSpell {
             .build();
 
     public PoisonSplashSpell() {
-        this.manaCostPerLevel = 10;
+        this.manaCostPerLevel = 2.5;
         this.baseSpellPower = 8;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 15;
         this.baseManaCost = 40;
     }
@@ -108,10 +108,10 @@ public class PoisonSplashSpell extends AbstractSpell {
     }
 
     private float getDamage(int spellLevel, LivingEntity entity) {
-        return this.getSpellPower(spellLevel, entity);
+        return this.getSpellPower(spellLevel/4, entity);
     }
 
     private int getDuration(int spellLevel, LivingEntity entity) {
-        return 100 + spellLevel * 40;
+        return 100 + spellLevel/20 * 40;
     }
 }

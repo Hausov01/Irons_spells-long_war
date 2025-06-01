@@ -40,9 +40,9 @@ public class MagmaBombSpell extends AbstractSpell {
             .build();
 
     public MagmaBombSpell() {
-        this.manaCostPerLevel = 5;
+        this.manaCostPerLevel = 1.25;
         this.baseSpellPower = 8;
-        this.spellPowerPerLevel = 3;
+        this.spellPowerPerLevel = 0.75;
         this.castTime = 20;
         this.baseManaCost = 30;
     }

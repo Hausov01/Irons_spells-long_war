@@ -38,9 +38,9 @@ public class FireboltSpell extends AbstractSpell {
             .build();
 
     public FireboltSpell() {
-        this.manaCostPerLevel = 2;
+        this.manaCostPerLevel = 0.5;
         this.baseSpellPower = 12;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 0;
         this.baseManaCost = 10;
     }

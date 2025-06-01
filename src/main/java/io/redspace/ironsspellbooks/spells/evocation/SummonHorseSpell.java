@@ -26,9 +26,9 @@ public class SummonHorseSpell extends AbstractSpell {
     private final ResourceLocation spellId = new ResourceLocation(IronsSpellbooks.MODID, "summon_horse");
 
     public SummonHorseSpell() {
-        this.manaCostPerLevel = 2;
+        this.manaCostPerLevel = 0.5;
         this.baseSpellPower = 2;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 20;
         this.baseManaCost = 50;
     }
@@ -88,8 +88,8 @@ public class SummonHorseSpell extends AbstractSpell {
     }
 
     private void setAttributes(AbstractHorse horse, float power) {
-        int maxPower = (int) baseSpellPower + (ServerConfigs.getSpellConfig(this).maxLevel() - 1) * (int) spellPowerPerLevel;
-        float quality = power / (float) maxPower;
+        int maxPower = (int) baseSpellPower + (ServerConfigs.getSpellConfig(this).maxLevel()/20 - 1) * (int) spellPowerPerLevel;
+        float quality = power/8 / (float) maxPower;
 
         float minSpeed = .2f;
         float maxSpeed = .45f;
@@ -104,6 +104,6 @@ public class SummonHorseSpell extends AbstractSpell {
         horse.getAttribute(Attributes.JUMP_STRENGTH).setBaseValue(Mth.lerp(quality, minJump, maxJump));
         horse.getAttribute(Attributes.MAX_HEALTH).setBaseValue(Mth.lerp(quality, minHealth, maxHealth));
         if (!horse.isDeadOrDying())
-            horse.setHealth(horse.getMaxHealth());
+            horse.setHealth(horse.getMaxHealth()/10);
     }
 }

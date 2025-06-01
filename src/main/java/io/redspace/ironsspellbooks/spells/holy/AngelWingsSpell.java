@@ -35,9 +35,9 @@ public class AngelWingsSpell extends AbstractSpell {
             .build();
 
     public AngelWingsSpell() {
-        this.manaCostPerLevel = 20;
+        this.manaCostPerLevel = 5;
         this.baseSpellPower = 30;
-        this.spellPowerPerLevel = 30;
+        this.spellPowerPerLevel = 7.5;
         this.castTime = 0;
         this.baseManaCost = 60;
     }
@@ -48,7 +48,7 @@ public class AngelWingsSpell extends AbstractSpell {
     }
 
     private int getEffectDuration(int spellLevel, LivingEntity entity) {
-        return (int) getSpellPower(spellLevel, entity) * 20;
+        return (int) getSpellPower(spellLevel/20, entity) * 20;
     }
 
     @Override

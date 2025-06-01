@@ -49,9 +49,9 @@ public class SlowSpell extends AbstractSpell {
             .build();
 
     public SlowSpell() {
-        this.manaCostPerLevel = 10;
+        this.manaCostPerLevel = 2.5;
         this.baseSpellPower = 20;
-        this.spellPowerPerLevel = 4;
+        this.spellPowerPerLevel = 1;
         this.castTime = 30;
         this.baseManaCost = 50;
     }
@@ -107,7 +107,7 @@ public class SlowSpell extends AbstractSpell {
     }
 
     public int getAmplifier(int spellLevel, LivingEntity caster) {
-        return spellLevel - 1;
+        return spellLevel/20 - 1;
     }
 
     public int getDuration(int spellLevel, LivingEntity caster) {

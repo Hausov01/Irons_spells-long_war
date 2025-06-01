@@ -40,9 +40,9 @@ public class HealSpell extends AbstractSpell {
             .build();
 
     public HealSpell() {
-        this.manaCostPerLevel = 15;
+        this.manaCostPerLevel = 3.75;
         this.baseSpellPower = 5;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 0;
         this.baseManaCost = 30;
     }

@@ -44,8 +44,8 @@ public class PortalSpell extends AbstractSpell {
             .build();
 
     public PortalSpell() {
-        this.baseSpellPower = 5 * 60;
-        this.spellPowerPerLevel = 2 * 60;
+        this.baseSpellPower = 5 * 15;
+        this.spellPowerPerLevel = 2 * 15;
         this.baseManaCost = 200;
         this.manaCostPerLevel = 10;
         this.castTime = 0;

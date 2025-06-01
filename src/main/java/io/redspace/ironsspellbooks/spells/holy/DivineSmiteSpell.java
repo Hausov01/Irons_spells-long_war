@@ -50,9 +50,9 @@ public class DivineSmiteSpell extends AbstractSpell {
             .build();
 
     public DivineSmiteSpell() {
-        this.manaCostPerLevel = 15;
+        this.manaCostPerLevel = 3.75;
         this.baseSpellPower = 8;
-        this.spellPowerPerLevel = 3;
+        this.spellPowerPerLevel = 0.75;
         this.castTime = 16;
         this.baseManaCost = 30;
     }

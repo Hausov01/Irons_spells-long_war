@@ -44,9 +44,9 @@ public class FireflySwarmSpell extends AbstractSpell {
             .build();
 
     public FireflySwarmSpell() {
-        this.manaCostPerLevel = 10;
+        this.manaCostPerLevel = 2.5;
         this.baseSpellPower = 6;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 30;
         this.baseManaCost = 40;
     }
@@ -103,6 +103,6 @@ public class FireflySwarmSpell extends AbstractSpell {
     }
 
     private float getDamage(int spellLevel, LivingEntity entity) {
-        return this.getSpellPower(spellLevel, entity) / 3f;
+        return this.getSpellPower(spellLevel/4, entity) / 3f;
     }
 }

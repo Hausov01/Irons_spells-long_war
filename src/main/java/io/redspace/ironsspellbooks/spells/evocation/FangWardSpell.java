@@ -41,9 +41,9 @@ public class FangWardSpell extends AbstractSpell {
             .build();
 
     public FangWardSpell() {
-        this.manaCostPerLevel = 5;
+        this.manaCostPerLevel = 1.25;
         this.baseSpellPower = 8;
-        this.spellPowerPerLevel = 1;
+        this.spellPowerPerLevel = 0.25;
         this.castTime = 15;
         this.baseManaCost = 45;
     }
@@ -110,7 +110,7 @@ public class FangWardSpell extends AbstractSpell {
     }
 
     private int getRings(int spellLevel, LivingEntity entity) {
-        return 2 + (spellLevel - 1) / 3;
+        return 2 + (spellLevel/20 - 1) / 3;
     }
 
     @Override

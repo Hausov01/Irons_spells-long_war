@@ -67,7 +67,7 @@ public class GluttonySpell extends AbstractSpell {
     }
 
     private float getManaRatio(int spellLevel, LivingEntity entity) {
-        return GluttonyEffect.ratioForAmplifier(spellLevel - 1);
+        return GluttonyEffect.ratioForAmplifier(spellLevel/20 - 1);
     }
 
     @Override

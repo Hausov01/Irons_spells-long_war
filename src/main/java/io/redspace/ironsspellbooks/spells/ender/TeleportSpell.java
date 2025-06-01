@@ -39,8 +39,8 @@ public class TeleportSpell extends AbstractSpell {
             .build();
 
     public TeleportSpell() {
-        this.baseSpellPower = 10;
-        this.spellPowerPerLevel = 10;
+        this.baseSpellPower = 2.5;
+        this.spellPowerPerLevel = 2.5;
         this.baseManaCost = 20;
         this.manaCostPerLevel = 2;
         this.castTime = 0;

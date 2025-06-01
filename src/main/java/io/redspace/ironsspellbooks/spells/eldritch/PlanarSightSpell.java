@@ -39,9 +39,9 @@ public class PlanarSightSpell extends AbstractEldritchSpell {
             .build();
 
     public PlanarSightSpell() {
-        this.manaCostPerLevel = 50;
+        this.manaCostPerLevel = 12.5;
         this.baseSpellPower = 40;
-        this.spellPowerPerLevel = 20;
+        this.spellPowerPerLevel = 5;
         this.castTime = 0;
         this.baseManaCost = 150;
     }
@@ -73,7 +73,7 @@ public class PlanarSightSpell extends AbstractEldritchSpell {
 
     @Override
     public void onCast(Level level, int spellLevel, LivingEntity entity, CastSource castSource, MagicData playerMagicData) {
-        entity.addEffect(new MobEffectInstance(MobEffectRegistry.PLANAR_SIGHT.get(), (int) (getSpellPower(spellLevel, entity) * 20), spellLevel - 1, false, false, true));
+        entity.addEffect(new MobEffectInstance(MobEffectRegistry.PLANAR_SIGHT.get(), (int) (getSpellPower(spellLevel/20, entity) * 20), spellLevel - 1, false, false, true));
         super.onCast(level, spellLevel, entity, castSource, playerMagicData);
     }
 

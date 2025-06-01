@@ -37,7 +37,7 @@ public class AcupunctureSpell extends AbstractSpell {
     }
 
     public AcupunctureSpell() {
-        this.manaCostPerLevel = 5;
+        this.manaCostPerLevel = 1.25;
         this.baseSpellPower = 1;
         this.spellPowerPerLevel = 0;
         this.castTime = 0;
@@ -93,10 +93,10 @@ public class AcupunctureSpell extends AbstractSpell {
 
 
     private int getCount(int spellLevel, LivingEntity caster) {
-        return (int) ((4 + spellLevel) * getSpellPower(spellLevel, caster));
+        return (int) ((4 + spellLevel/20) * getSpellPower(spellLevel, caster));
     }
 
     private float getDamage(int spellLevel, LivingEntity caster) {
-        return 1 + getSpellPower(spellLevel, caster);
+        return 1 + getSpellPower(spellLevel, caster)*2;
     }
 }
